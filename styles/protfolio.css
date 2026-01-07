@@ -114,6 +114,11 @@ nav .menu a {
     margin-bottom: 30px;
 }
 
+#banner .banner_btn {
+    display: flex;
+    gap: 30px;
+}
+
 #banner .banner_image img {
     max-width: 584px;
     vertical-align: middle;
