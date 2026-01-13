@@ -120,7 +120,8 @@ nav .menu a {
 
 #banner .banner_btn {
     display: flex;
-    gap: 30px;
+    flex-wrap: wrap;
+    gap: 20px;
 }
 
 #banner .banner_image img {
@@ -287,4 +288,124 @@ footer .footer_container {
     border: none;
     border-radius: 5px;
     color: #757575;
+}
+
+/* extra */
+.hide {
+    display: none !important;
+}
+
+/* -------- media quarys -------- */
+@media screen and (max-width: 576px) {
+    #skills .skills_container {
+        width: 95%;
+    }
+
+    .section_heading h2 {
+        font-size: 30px;
+    }
+
+    #about, #resume, #skills {
+        padding-top: 60px;
+    }
+
+    header {
+    background-color: #FFF8F3;
+    background: url(../images/header_bg.png), #FFF8F3;
+    background-position: bottom right;
+    background-repeat: no-repeat;
+}
+
+
+    nav {
+        width: 95%;
+        gap: 20px;
+    }
+
+    nav .menu {
+        /* flex-wrap: wrap; */
+        justify-content: center;
+        gap: 30px;
+        
+    }
+
+    #banner {
+        margin: 20px;
+        gap: 20px;
+        text-align: center;
+    }
+
+        #banner .banner_image img {
+        width: 100%;
+    }
+
+    #banner .banner_content h2 {
+        font-size: 30px;
+        margin-top: 40px;
+    }
+
+    #banner .banner_content h1 {
+        font-size: 44px;
+    }
+
+    #banner .banner_btn {
+        justify-content: center;
+    }
+
+
+
+
+    #about .about_container {
+        width: 95%;
+        padding: 20px;
+    }
+
+    #about .about_container .about_info {
+        gap: 40px;
+    }
+
+    #skills .skills_container .skill_box, #about .about_container .about_info, footer .footer_container, #resume .resume_container, nav, nav .menu, #banner {
+        flex-direction: column;
+    }
+
+    .skill_box .skill_card {
+        max-width: 100%;
+    }
+
+    #resume .resume_container {
+        width: 95%;
+        margin-top: 60px;
+        gap: 24px;
+    }
+
+    .resume_card {
+        margin-right: 10px;
+    }
+
+    footer {
+        margin-top: 60px;
+        padding: 40px 0;
+    }
+
+    footer .footer_container {
+        width: 95%;
+        gap: 60px;
+    }
+
+    .footer_container .footer_social h2 {
+        font-size: 30px;
+    }
+
+    .footer_container .form h2 {
+        font-size: 30px;
+    }
+
+    .footer_social .icons a {
+        margin-right: 16px;
+    }
+
+    .footer_container .form input[type="text"], input[type="email"], .footer_container .form textarea {
+        width: 100%;
+    }
+
 }
